@@ -32,44 +32,38 @@ from the IEEE-CIS Kaggle competition dataset.
 
 ## 🗂 Project Structure
 
-fraud-detection-ieee/
-│
-├── notebooks/
-│   ├── 01_EDA.ipynb               # Exploratory Data Analysis
-│   ├── 02_Preprocessing.ipynb     # Data cleaning, SMOTE, feature engineering
-│   ├── 03_Modeling.ipynb          # Train XGBoost, RF, Logistic Regression
-│   ├── 04_Evaluation.ipynb        # ROC-AUC, confusion matrix, threshold tuning
-│   ├── 05_SHAP.ipynb              # SHAP explainability charts
-│   ├── 06_API.ipynb               # FastAPI REST API
-│   └── 07_Dashboard.ipynb         # Streamlit dashboard
-│
-├── models/
-│   ├── best_model.pkl             # XGBoost model + threshold
-│   ├── models.pkl                 # All 3 trained models
-│   └── feature_cols.pkl           # Feature column names (225 features)
-│
-├── src/
-│   ├── app.py                     # FastAPI application
-│   └── dashboard.py               # Streamlit dashboard
-│
-├── reports/
-│   ├── fraud_distribution.png     # Fraud vs legit chart
-│   ├── amount_analysis.png        # Transaction amount analysis
-│   ├── confusion_matrix.png       # Model confusion matrix
-│   ├── roc_curves.png             # ROC curves for all models
-│   ├── pr_curves.png              # Precision-recall curves
-│   ├── shap_summary.png           # SHAP summary plot
-│   ├── shap_bar.png               # SHAP feature importance bar
-│   └── shap_force.png             # SHAP force plot
-│
-├── data/                          # Data folder (CSVs not included)
-├── tests/
-│   └── test_model.py              # Model tests
-│
-├── .gitignore
-├── requirements.txt
-├── setup.py
-└── README.md
+    fraud-detection-ieee/
+    ├── notebooks/
+    │   ├── 01_EDA.ipynb
+    │   ├── 02_Preprocessing.ipynb
+    │   ├── 03_Modeling.ipynb
+    │   ├── 04_Evaluation.ipynb
+    │   ├── 05_SHAP.ipynb
+    │   ├── 06_API.ipynb
+    │   └── 07_Dashboard.ipynb
+    ├── models/
+    │   ├── best_model.pkl
+    │   ├── models.pkl
+    │   └── feature_cols.pkl
+    ├── src/
+    │   ├── app.py
+    │   └── dashboard.py
+    ├── reports/
+    │   ├── fraud_distribution.png
+    │   ├── amount_analysis.png
+    │   ├── confusion_matrix.png
+    │   ├── roc_curves.png
+    │   ├── pr_curves.png
+    │   ├── shap_summary.png
+    │   ├── shap_bar.png
+    │   └── shap_force.png
+    ├── data/
+    ├── tests/
+    │   └── test_model.py
+    ├── .gitignore
+    ├── requirements.txt
+    ├── setup.py
+    └── README.md
 
 ---
 
