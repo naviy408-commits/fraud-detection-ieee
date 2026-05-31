@@ -1,0 +1,17 @@
+# Large files
+processed_data.pkl
+train_transaction.csv
+train_identity.csv
+
+# Python
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
